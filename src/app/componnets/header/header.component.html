@@ -1,0 +1,5 @@
+<div class="header">
+  <div class="header-item" [class.click]="status" *ngFor="let item of listItem" (click)="onClick(item)">
+    <span>{{item}}</span>
+  </div>
+</div>
