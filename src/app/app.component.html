@@ -1,7 +1,9 @@
-<app-layout-home (countChange)="updateSize($event)">
-  <app-counter [count]="size"></app-counter>
-  <h2>{{size}}</h2>
-<!-- <span>{{date | date}}</span>
+<app-layout-home (countChange)="updateSize($event)" [size]="size">
+  <router-outlet></router-outlet>
+
+
+  <!-- <app-todo-list routerLink="/counters"></app-todo-list> -->
+  <!-- <span>{{date | date}}</span>
 <h2  appHighlight>Select Country</h2>
 <select name="" id="" (change)="onChange($event)">
   <option [value]="product" *ngFor="let product of listProduct" >{{product}}</option>
@@ -14,4 +16,3 @@
   </ng-container>
 </div> -->
 </app-layout-home>
-

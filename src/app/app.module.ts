@@ -8,6 +8,8 @@ import { HeaderComponent } from './componnets/header/header.component';
 import { HighlightDirective } from './Directive/highlight.directive';
 import { LayoutHomeComponent } from './Layout/layout-home/layout-home.component';
 import { CounterComponent } from './componnets/counter/counter.component';
+import { TodoListComponent } from './componnets/todo-list/todo-list.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { CounterComponent } from './componnets/counter/counter.component';
     HighlightDirective,
     LayoutHomeComponent,
     CounterComponent,
+    TodoListComponent,
+    PageNotFoundComponent,
 
   ],
   imports: [

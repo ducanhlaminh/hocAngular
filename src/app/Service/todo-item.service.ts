@@ -4,9 +4,21 @@ import { TodoItem } from '../common/TodoItem';
   providedIn: 'root',
 })
 export class TodoItemService {
-  createTodo(){
-    let todos : TodoItem[] ;
-    todos = [new TodoItem('angular','pending'),new TodoItem('react','complete')];
-    return todos;
+  public todos! : TodoItem[]
+  constructor( ){
+    this.todos = [new TodoItem('angular','pending'),new TodoItem('react','complete')];
   }
+  getTodo(){
+    return  this.todos;
+  }
+  post(data : TodoItem){
+     this.todos= [...this.todos,data];
+
+  }
+  delete(index : number){
+    this.todos= this.todos.filter((todo,idx)=>index!==idx);
+    console.log(this.todos);
+
+  }
+
 }

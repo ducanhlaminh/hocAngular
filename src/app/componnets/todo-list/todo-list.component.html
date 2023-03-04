@@ -1,0 +1,10 @@
+<input type="text" [(ngModel)]="valueText" />
+<button (click)="addTodo()">Add todo</button>
+<div class="todo" *ngFor="let todo of todoList index as i">
+  <div class="">
+    <p>ID {{i +1}}</p>
+    <p>Name : {{ todo.name }}</p>
+    <p>Status : {{ todo.status }}</p>
+  </div>
+  <button (click)="deleteTodo(i)">Delete</button>
+</div>

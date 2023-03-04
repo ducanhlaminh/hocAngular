@@ -1,5 +1,10 @@
 <div class="header">
-  <div class="header-item" [class.click]="status" *ngFor="let item of listItem" (click)="onClick(item)">
-    <span>{{item}}</span>
+  <div class="header-item"   routerLink="/count"  routerLinkActive="click">
+    <span>HOME</span>
+
+  </div>
+  <div class="header-item" routerLink="/todo" routerLinkActive="click">
+    <span>TODO</span>
+
   </div>
 </div>

@@ -6,7 +6,8 @@ import { Component,Input,Output,EventEmitter } from '@angular/core';
   styleUrls: ['./layout-home.component.scss']
 })
 export class LayoutHomeComponent {
-  @Input() sizeLayout : number = 30
+@Input() size! :number ;
+ pageHome: boolean=false;
   @Output() countChange = new EventEmitter<number>();
   updateSize(value: any){
     this.countChange.emit(value);
